@@ -1,0 +1,71 @@
+/* Stunning Navbar CSS */
+
+.navbar {
+  background: linear-gradient(135deg, #121212, #121212);
+  padding: 15px 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff !important;
+  transition: 0.3s;
+}
+
+.navbar-brand:hover {
+  color: #f8f9fa !important;
+  transform: scale(1.1);
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #fff !important;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 15px;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+.dropdown-menu {
+  background: #343a40;
+  border: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.dropdown-menu .dropdown-item {
+  color: #f8f9fa !important;
+  font-size: 16px;
+  padding: 12px 20px;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background: #007bff;
+  color: #fff !important;
+  transform: scale(1.05);
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+@media (max-width: 992px) {
+  .navbar-nav {
+      text-align: center;
+  }
+}

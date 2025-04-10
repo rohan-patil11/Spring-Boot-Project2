@@ -1,0 +1,37 @@
+/* Container to hold everything in the center */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers vertically */
+  align-items: center; /* Centers horizontally */
+  gap: 20px; /* Adds space between elements */
+  padding: 20px;
+  box-sizing: border-box; /* Ensures padding doesn't add extra size */
+}
+
+/* Image styling */
+img {
+  display: block;
+  width: 60%; /* Adjust width */
+  max-height: 60vh; /* Prevents the image from being too tall */
+  margin: auto; /* Centers horizontally */
+  border: 5px solid #000; /* Black border */
+  padding: 15px; /* Space between border and image */
+  border-radius: 10px; /* Soft rounded corners */
+  background-color: #fff; /* Background inside border */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Adds a shadow effect */
+  margin-top: 30px; /* Reduces space between navbar and image */
+}
+
+/* Footer Styling */
+footer {
+  width: 100%;
+  background-color: #333; /* Dark footer background */
+  color: white; /* White text */
+  text-align: center;
+  padding: 15px 0; /* Vertical padding */
+  font-size: 18px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}

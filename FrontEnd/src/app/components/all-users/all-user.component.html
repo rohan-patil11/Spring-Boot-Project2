@@ -1,0 +1,32 @@
+<app-menu></app-menu>
+<table class="table table dark" >
+  <thead class="thead-dark">
+    <tr>
+
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Username</th>
+      <th scope="col">Password</th>
+      <th scope="col">E mail</th>
+      <th scope="col">Role</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let list of userslist">
+    <tr>
+      <td>{{list.firstName}}</td>
+      <td>{{list.lastName}}</td>
+      <td>{{list.username}}</td>
+      <td>{{list.password}}</td>
+      <td>{{list.email}}</td>
+      <td>{{list.role}}</td>
+      <td>
+        <button class="btn btn-danger" (click)="deleteuser(list.username)">Delete</button>&nbsp;
+         <a class="btn btn-info" [routerLink]="['/user-profile',list.username]">View</a>
+      </td>
+
+    </tr>
+
+  </tbody>
+</table>
+
